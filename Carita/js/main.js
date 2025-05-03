@@ -11,31 +11,29 @@
  * Declarar las constantes
  */
 
-const selecione = document.querySelector (.js-select)
-const boton = document.querySelector (.js-btn)
-const resultado = document.querySelector (js-reult)
+const resultado = document.querySelector ('.js-result')
+const seleccione = document.querySelector ('.js-select')
+const btn = document.querySelector ('.js-btn')
+
 
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }
 
-  function generarMovOrdenador() {
-    const numeroAleatorio = getRandomNumber(10);
-    console.log(numeroAleatorio);
-  
-    let movOrdenador = '';
-  
-    /*
-    //  2. Obtener el valor del ordenador
-    if (numeroAleatorio <= 3) {
-      movOrdenador = 'piedra';
-    } else if (numeroAleatorio >= 7) {
-      movOrdenador = 'papel';
+  function handleClick(event) {
+
+    const movJugadora = seleccione.value;
+    resultado.innerHTML = movJugadora;
+    
+    const numeroAleatorio = getRandomNumber(100);
+    console.log('Número generado', numeroAleatorio);
+
+    if (numeroAleatorio % 2 === 0) {
+      document.body.classList.remove('modo-impar');
     } else {
-      movOrdenador = 'tijera';
+      document.body.classList.add('modo-impar'); 
     }
-    return movOrdenador;
+
   }
 
-
-btn.addEventListerner("click", handleClick)
+btn.addEventListener("click", handleClick)

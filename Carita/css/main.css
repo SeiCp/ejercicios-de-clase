@@ -1,3 +1,16 @@
-.body{
+body{
     background-color: #ffcc00;
+}
+
+.modo-impar{
+    background-color:#ff9900 ;
+}
+
+.cara-grande {
+    font-size: 5rem;
+}
+
+.boton {
+    background-color: blue;
+    color: white;
 }
