@@ -11,6 +11,6 @@
  * Declarar las constantes
  */
 
-const resultado = document.querySelector ('.js-resultado')
+const saludo = document.querySelector ('.js-saludo')
 
-resultado.innerHTML += "Mundo"
+saludo.innerHTML += "Mundo"
