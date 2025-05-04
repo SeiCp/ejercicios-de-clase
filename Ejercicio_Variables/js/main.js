@@ -11,6 +11,6 @@
  * Declarar las constantes
  */
 
-const selecione = document.querySelector (.js-select)
-const boton = document.querySelector (.js-btn)
-const resultado = document.querySelector (js-reult)
+const saludo = document.querySelector ('.js-saludo')
+
+saludo.innerHTML += "Mundo"
