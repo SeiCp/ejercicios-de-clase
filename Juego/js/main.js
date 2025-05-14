@@ -11,11 +11,14 @@
  * Declarar las constantes
  */
 
-const resultado = document.querySelector ('.js-result')
-const seleccione = document.querySelector ('.js-select')
-const btn = document.querySelector ('.js-btn')
+const resultado = document.querySelector (".js-result")
+const seleccionar = document.querySelector (".js-select")
+const btn = document.querySelector (".js-btn")
 
 
+
+
+/*
 function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }
